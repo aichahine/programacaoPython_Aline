@@ -26,13 +26,3 @@ print(f"O valor de um sétimo do saláriom mínimo é: R${setimo}")
 print(f"O valor em reais de cada quilowatt: R${valorkw}")
 print(f"O valor em reais a ser pago: R${pagar}")
 print(f"O novo valor a ser pago por essa residência com um desconto de 10%: R${novoValor}")
-
-
-
-# print(f"Valor em reais de cada quilowatt: {}")
-
-
-
-
-
-
