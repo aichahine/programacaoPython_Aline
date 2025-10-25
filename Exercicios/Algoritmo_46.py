@@ -11,3 +11,9 @@ valorReaj = reaj * saldoIni
 saldoFim = saldoIni + valorReaj
 
 print(f"Saldo inicial: {saldoIni}\nValor do reajuste: {valorReaj}\nSaldo final: {saldoFim}")
+
+
+# Solução do professor
+saldo = float(input("Digite o saldo: "))
+novoSaldo = saldo+(saldo*0.01)
+print(f"Saldo atualizado {novoSaldo}")

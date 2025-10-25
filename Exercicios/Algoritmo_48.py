@@ -18,11 +18,11 @@ gastoResid = int(input("Digite a quantidade de quilowatts gasta pela residência
 setimo = salarioMinimo / 7
 valorkw = setimo / 100
 
-pagar = valorkw * gastoResid
-desconto = pagar * 0.10
-novoValor = pagar - desconto
+valorIni = valorkw * gastoResid
+desconto = valorIni * 0.10
+novoValor = valorIni - desconto
 
 print(f"O valor de um sétimo do saláriom mínimo é: R${setimo}")
 print(f"O valor em reais de cada quilowatt: R${valorkw}")
-print(f"O valor em reais a ser pago: R${pagar}")
+print(f"O valor em reais a ser pago: R${valorIni}")
 print(f"O novo valor a ser pago por essa residência com um desconto de 10%: R${novoValor}")
