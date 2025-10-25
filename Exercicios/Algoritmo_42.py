@@ -5,14 +5,16 @@ import os
 os.system('cls')
 import math
 
-x = float(input("Digite um ângulo: "))
+angulo = float(input("Digite um ângulo: "))
+
+# Converter a entrada do tipo float para graus utilizando a classe Math
+x = math.radians(angulo)
 
 seno = math.sin(x)
 coseno = math.cos(x)
 tangente = math.tan(x)
-# secante = math.asin(x)
-# cosecante = math.acos(x)
-cotangente = math.atan(x)
+secante = 1/seno
+cosecante = 1/coseno
+cotangente = 1/tangente
 
-# print(f"Seno: {seno}\nCoseno: {coseno}\nTangente: {tangente}\nSecante: {secante}\nCosecante: {cosecante}\nCotangente: {cotangente}")
-print(f"Seno: {seno}\nCoseno: {coseno}\nTangente: {tangente}\nCotangente: {cotangente}")
+print(f"Seno: {seno}\nCoseno: {coseno}\nTangente: {tangente}\nSecante: {secante}\nCosecante: {cosecante}\nCotangente: {cotangente}")
