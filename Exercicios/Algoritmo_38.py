@@ -8,4 +8,4 @@ numero = float(input("Digite o número: "))
 
 terco = numero / 3
 
-print(f"Terça parte: {terco}")
+print(f"A terça parte de {numero} é {terco}.")

@@ -3,7 +3,7 @@ os.system('cls')
 import math
 
 # Fórmula Math de potência
-exp= math.pow(2,3)
+exp = math.pow(2,3)
 print(exp)
 
 # Fórmula Math de raiz quadrada
