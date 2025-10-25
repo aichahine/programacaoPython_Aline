@@ -7,8 +7,10 @@ import os
 os.system('cls')
 import math
 
-r = float(input("Digite o raio de um círculo: "))
-perimetro = 2 * math.pi * r
-#area = math.pi*(r*math.pow)
+r = int(input("Digite o raio de um círculo: "))
 
+perimetro = 2 * math.pi * r
 print(f"Perímetro: {perimetro}")
+
+area = math.pi * (r ** 2)
+print(f"Área: {area}")
