@@ -9,8 +9,19 @@ O valor em reais de cada quilowatt
 O valor em reais a ser pago
 O novo valor a ser pago por essa residência com um desconto de 10%.'''
 
-salario = float(input("Digite o valor do salário mínimo: "))
+salarioMinimo = float(input("Digite o valor do salário mínimo: "))
 gastoResid = int(input("Digite a quantidade de quilowatts gasta pela residência: "))
+
+kw = 100
+teste = salarioMinimo / 7
+
+cemKW = kw * (salarioMinimo / 7)
+print(f"Teste: {teste}")
+print(f"Cem quilowatts custam: {cemKW}")
+
+
+# print(f"Valor em reais de cada quilowatt: {}")
+
 
 
 
