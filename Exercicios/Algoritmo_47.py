@@ -4,3 +4,4 @@
 import os 
 os.system('cls')
 
+numero = int(input("Digite o número: "))
