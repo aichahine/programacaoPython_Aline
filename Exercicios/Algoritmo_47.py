@@ -4,4 +4,6 @@
 import os 
 os.system('cls')
 
-numero = int(input("Digite o número: "))
+numero = input("Digite o número com três dígitos: ")
+numeroInvertido = numero[::-1]
+print(f"Número invertido: {numeroInvertido}")

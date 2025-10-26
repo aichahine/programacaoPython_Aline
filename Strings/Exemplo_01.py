@@ -1,3 +1,4 @@
+# Aula de 25 de outubro de 2025
 # Strings
 
 import os 

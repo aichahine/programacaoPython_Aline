@@ -1,3 +1,5 @@
+# Aula de 25 de outubro de 2025
+
 import os
 os.system('cls')
 
@@ -6,7 +8,7 @@ nota02 = 9
 nota03 = 5
 
 media = (nota01 + nota02 + nota03)/3
-print(media)
+print(f"Média: {media}")
 
-media = ((nota01*1)+(nota02*2)+(nota03*3)/3)
-print(media)
+mediaP = ((nota01*1)+(nota02*2)+(nota03*3)/3)
+print(f"Média ponderada: {mediaP}")
