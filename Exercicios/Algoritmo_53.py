@@ -1,12 +1,13 @@
-# Algoritmo 53
-# Criar um algoritmo que calcule e imprima a área de um triângulo
+# Algoritmo 52
+# Entrar com os lados a, b, c de um paralelepípedo. Calcular e imprimir a diagonal
 
 import os 
 os.system('cls')
 import math
 
-base = int(input("Digite o valor da base do triângulo: "))
-altura = int(input("Digite o valor do lado do triângulo: "))
+a = int(input("Digite o valor do lado A do paralelepípedo: "))
+b = int(input("Digite o valor do lado B do paralelepípedo: "))
+c = int(input("Digite o valor do lado C do paralelepípedo: "))
 
-area = (base * altura) / 2
-print(f"Área: {area}")
+diagonal = math.sqrt(a**2 + b**2 + c**2)
+print(f"Diagonal: {diagonal}")

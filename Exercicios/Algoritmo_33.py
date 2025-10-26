@@ -7,4 +7,4 @@ os.system('cls')
 num01 = int(input("Digite um número: "))
 num02 = int(input("Digite outro número: "))
 
-print(f"{num01}, {num02}")
+print(f"Os números são {num01} e {num02}")

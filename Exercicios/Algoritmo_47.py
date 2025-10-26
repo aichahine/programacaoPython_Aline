@@ -4,6 +4,8 @@
 import os 
 os.system('cls')
 
+# Solicito o input como número mas não declaro o tipo int
+# para que seja possível aplicar a ordenação de string
 numero = input("Digite o número com três dígitos: ")
 numeroInvertido = numero[::-1]
 print(f"Número invertido: {numeroInvertido}")

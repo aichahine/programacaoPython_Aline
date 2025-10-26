@@ -5,4 +5,4 @@ import os
 os.system('cls')
 
 numero = int(input("Digite um número: "))
-print(numero)
+print(f"Onúmero é: {numero}")

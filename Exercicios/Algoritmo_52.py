@@ -1,13 +1,25 @@
 # Algoritmo 52
-# Entrar com os lados a, b, c de um paralelepípedo. Calcular e imprimir a diagonal
+# Entrar com o lado de um quadrado e imprimir:
+# perimetro:
+# area:
+# diagonal:
 
 import os 
 os.system('cls')
 import math
 
-a = int(input("Digite o valor do lado A do paralelepípedo: "))
-b = int(input("Digite o valor do lado B do paralelepípedo: "))
-c = int(input("Digite o valor do lado C do paralelepípedo: "))
+# Recebendo o valor do lado do quadrado
+lado = int(input("Digite o valor do lado do quadrado: "))
+print(f"O valor do lado do quadrado é: {lado}")
 
-diagonal = math.sqrt(a**2 + b**2 + c**2)
-print(f"Diagonal: {diagonal}")
+# Calculando o perímetro
+perimetro = 4 * lado
+print(f"O perímetro do quadrado é: {perimetro}")
+
+# Calculando a área
+area = lado * lado
+print(f"A área do quadrado é: {area}")
+
+# Calculando a diagonal
+diagonal = lado * math.sqrt(2)
+print(f"A diagonal do quadrado é: {diagonal}")

@@ -1,5 +1,6 @@
 # Algoritmo 44
-# Entrar com o número e a base em que se deseja calcular o logaritmo desse número e imprimi-lo
+# Entrar com o número e a base em que se deseja calcular o 
+# logaritmo desse número e imprimi-lo
 
 import os
 os.system('cls')

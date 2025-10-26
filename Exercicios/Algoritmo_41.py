@@ -12,4 +12,3 @@ numero04 = int(input("Digite o quarto número: "))
 mediaP = ((numero01*1) + (numero02*2) + (numero03*3) + (numero04*4)) / 4
 
 print(f"Média ponderada: {mediaP}")
-
