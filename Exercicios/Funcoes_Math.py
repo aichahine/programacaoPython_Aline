@@ -1,4 +1,5 @@
 # COLINHA DE FUNÇÕES MATH
+
 # seno                      sin
 # coseno                    cos
 # tangente                  tan
