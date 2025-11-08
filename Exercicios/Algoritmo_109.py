@@ -4,8 +4,6 @@
 import os
 os.system('cls')
 
-
-
 '''# Ordenar uma lista
 # Por padrão, ordena ordem alfabética / crescente
 novaLista.sort(reverse)
