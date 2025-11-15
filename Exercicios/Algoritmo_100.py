@@ -8,9 +8,17 @@ os.system('cls')
 
 numero = int(input("Digite um número inteiro com quatro dígitos: "))
 milhar = numero//1000
-centena = numero//100
+''' Centena: Para obter o dígito da centena, dividimos o número por 100
+    para mover o dígito da centena para a posição mais à esquerda e, em seguida,
+    usamos o operador de módulo (%) com 10 para obter apenas o último dígito resultante.
+    No código, isso é feito assim:'''
+centena = (numero // 100) % 10  # Casa das centenas
 
-if(milhar%4==0 and centena%4==0):
+# Formar o novo número
+novoNumero = milhar * 10 + centena
+print(f'O novo número formado é: {novoNumero}')
+
+if(novoNumero%4==0):
     print(f"O algarismo do milhar e da centena são múltiplos de quatro, os algarismos são:\nMilhar: {milhar}\nCentena: {centena}")
 else:
     print(f'Não são múltiplos de quatro:\nMilhar: {milhar}\nCentena: {centena}')
@@ -23,26 +31,4 @@ else:
 # num2 = int(input("Digite o segundo número: "))
 
 # parteInteira = num1 // num2
-
 # print(f"Parte inteira da divisão: {parteInteira}")
-
-
-# Ler um número inteiro de 4 dígitos
-numero = int(input("Digite um número inteiro de 4 dígitos: "))
-
-# Verificar se o número tem 4 dígitos
-if 1000 <= numero <= 9999:
-    # Extrair os dígitos das casas das unidades de milhar e das centenas
-    milhar = numero // 1000  # Casa das unidades de milhar
-    centena = (numero // 100) % 10  # Casa das centenas
-    
-    # Formar o novo número
-    novo_numero = milhar * 10 + centena
-
-    # Verificar se o novo número é múltiplo de 4
-    if novo_numero % 4 == 0:
-        print(f"O número {novo_numero} é múltiplo de 4.")
-    else:
-        print(f"O número {novo_numero} não é múltiplo de 4.")
-else:
-    print("Por favor, digite um número válido de 4 dígitos.")
