@@ -15,8 +15,18 @@ def desenhar_formas_geometricas(tela):
     # Criando um retângulo
     pygame.draw.rect(tela,VERDE, (50,50,200,100),0)
 
-    # Criando uma linha
+    # Criando uma linha - o último parâmetro define a espessura
     pygame.draw.line(tela,BRANCO, (50,20),(750,200), 1)
+
+    # Criando um polígono
+    pygame.draw.polygon(tela, BRANCO, [(600, 500), (750, 550), (550, 550)], 0)
+
+# Exibindo uma imagem na tela
+def exibir_imagem_externa(tela, imagem, posicao):
+    BRANCO = (255,255,255)
+    tela.blit(imagem, posicao)
+    rect = imagem.get_rect(topleft=posicao)
+    pygame.draw.rect(tela, BRANCO, rect, 2)
 
 # Inicializando a biblioteca pygame
 def main():
@@ -44,6 +54,20 @@ def main():
 
     # Uma constante recebendo outra constante para que não seja modificada, definindo a cor de fundo
     COR_FUNDO = AZUL
+
+    # Carregando imagem externa
+    try:
+        imagem = pygame.image.load("sprite.png")
+        imagem = pygame.transform.scale(imagem, (150,150))
+    except:
+        print("Criando outra imagem")
+        imagem = pygame.surface((150,150))
+        imagem.fill(AMARELO)
+         # Criando um círculo preenchido na cor vermelha
+        pygame.draw.circle(tela,VERMELHO, (400,100),50,0)
+
+        # Criando um retângulo
+        pygame.draw.rect(tela,VERDE, (50,50,200,100),0)
 
     # Criando o loop principal do jogo
     executando = True
@@ -77,6 +101,8 @@ def main():
         tela.fill(COR_FUNDO)
 
         desenhar_formas_geometricas(tela)
+
+        exibir_imagem_externa(tela, imagem)
 
         # Atualização da tela
         pygame.display.flip()
