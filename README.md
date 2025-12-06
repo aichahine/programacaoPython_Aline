@@ -1,6 +1,9 @@
 # programacaoPython_Aline
 Repositório para arquivos do curso Programação em Python | Senai Manutenção
 
+# Aula de 06 de dezembro de 2025
+Pygame
+
 # Aula de 25 de outubro de 2025
 Operadores aritméticos e importação de classes Math
 
