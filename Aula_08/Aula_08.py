@@ -24,6 +24,7 @@ def desenhar_formas_geometricas(tela):
 # Exibindo uma imagem na tela
 def exibir_imagem_externa(tela, imagem, posicao):
     BRANCO = (255,255,255)
+    VERDE = (0,255,0)
     tela.blit(imagem, posicao)
     rect = imagem.get_rect(topleft=posicao)
     pygame.draw.rect(tela, BRANCO, rect, 2)
@@ -102,7 +103,7 @@ def main():
 
         desenhar_formas_geometricas(tela)
 
-        exibir_imagem_externa(tela, imagem)
+        exibir_imagem_externa(tela, imagem, 255, 100, 0)
 
         # Atualização da tela
         pygame.display.flip()
