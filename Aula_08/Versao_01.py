@@ -3,6 +3,39 @@ import pygame
 import os
 import sys
 
+class GameObject:
+    def __init__(self, image, height, speed):
+        self.speed = speed
+        self.image = image
+        self.posicao = image.get_rect().move(0, height)
+    def move(self):
+        self.posicao = self.pos.move(self.speed, 0)
+        if self.posicao.right > 600:
+            self.posicao.left = 0
+
+WIDTH = 800
+HEIGHT = 600
+SPRITE_HEIGHT = 40
+SPRITE_WIDTH = 40
+            
+def move(self, up=False, down=False, left=False, right=False):
+    if right:
+        self.pos.right += self.speed
+    if left:
+        self.pos.right -= self.speed
+    if down:
+        self.pos.top += self.speed
+    if up:
+        self.pos.top -= self.speed
+    if self.pos.right > WIDTH:
+        self.pos.left = 0
+    if self.pos.top > HEIGHT-SPRITE_HEIGHT:
+        self.pos.top = 0
+    if self.pos.right < SPRITE_WIDTH:
+        self.pos.right = WIDTH
+    if self.pos.top < 0:
+        self.pos.top = HEIGHT-SPRITE_HEIGHT
+
 # Desenhando formas na tela
 def desenhar_formas_geometricas(tela):
     BRANCO = (255,255,255)
