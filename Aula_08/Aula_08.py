@@ -3,6 +3,21 @@ import pygame
 import os
 import sys
 
+# Desenhando formas na tela
+def desenhar_formas_geometricas(tela):
+    BRANCO = (255,255,255)
+    VERMELHO = (255,0,0)
+    VERDE = (0,255,0)
+
+    # Criando um círculo preenchido na cor vermelha
+    pygame.draw.circle(tela,VERMELHO, (400,100),50,0)
+
+    # Criando um retângulo
+    pygame.draw.rect(tela,VERDE, (50,50,200,100),0)
+
+    # Criando uma linha
+    pygame.draw.line(tela,BRANCO, (50,20),(750,200), 1)
+
 # Inicializando a biblioteca pygame
 def main():
 
@@ -14,7 +29,7 @@ def main():
     ALTURA = 600
 
     # O método recebe as constantes que foram definidas para as dimensões da tela
-    tela = pygame.display.set_mode(LARGURA,ALTURA)
+    tela = pygame.display.set_mode((LARGURA,ALTURA))
 
     # Definindo o título da tela
     pygame.display.set_caption("Minha primeira tela de jogo")
@@ -44,7 +59,7 @@ def main():
             if evento.type == pygame.QUIT: # Configurando Exit
                 executando = False
             elif evento.type == pygame.KEYDOWN:
-                if evento.key == pygame.K__ESCAPE: # Configurando a ação da tecla Esc
+                if evento.key == pygame.K_ESCAPE: # Configurando a ação da tecla Esc
                     executando = False
                 # Mudando as cores de fundo com as teclas
                 elif evento.key == pygame.K_r:
@@ -61,11 +76,13 @@ def main():
         # Rendericação da tela do jogo
         tela.fill(COR_FUNDO)
 
-        # Atualização da tela
+        desenhar_formas_geometricas(tela)
 
+        # Atualização da tela
         pygame.display.flip()
-pygame.quit()
-sys.exit()
+
+    pygame.quit()
+    sys.exit()
 
 if __name__ == "__main__":
     main()
